@@ -16,6 +16,7 @@ export const photos = {
   it2:'/images/office/it3.jpg',
   it3:'/images/office/it4.jpg',
   team: '/images/team.jpg',
+  dining:'/images/kitchen/k5.jpg',
 };
 
 export type Project = {
