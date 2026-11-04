@@ -1,0 +1,2 @@
+import Link from 'next/link'; import { ArrowUpRight } from 'lucide-react';
+export default function CTA(){return <section className="cta-band"><div><span className="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span><h2>Have a space in mind?<br/><em>Let's talk about it.</em></h2></div><Link href="/start-a-project" className="round-cta">Start a project <ArrowUpRight size={19}/></Link><div className="cta-orbit" aria-hidden="true"/></section>}
