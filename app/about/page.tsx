@@ -259,12 +259,6 @@ export default function About() {
                         </Link>
                     </div>
                 </div>
-
-                <p className="demo-disclaimer">
-                    Add verified information about the FERRWUD team,
-                    studio, experience and completed projects before
-                    publishing.
-                </p>
             </section>
 
             <CTA />

@@ -17,6 +17,8 @@ export const photos = {
   it3:'/images/office/it4.jpg',
   team: '/images/team.jpg',
   dining:'/images/kitchen/k5.jpg',
+  project1:'/images/project1/hall.png',
+  project4:'/images/project4/3.jpg',
 };
 
 export type Project = {
@@ -38,7 +40,7 @@ export const projects: Project[] = [
     category: 'Luxury Residences',
     type: 'Apartment',
     location: 'Bengaluru · Demo project',
-    image: photos.living,
+    image: photos.project1,
     gallery: [
       '/images/project1/hall.png',
       '/images/project1/dinning.png',
@@ -72,10 +74,10 @@ export const projects: Project[] = [
 
   {
     slug: 'earth-oak',
-    title: 'Earth  Oak',
+    title: 'Sanjay Residence',
     category: 'Villas',
     type: 'Villa',
-    location: 'South India · Demo project',
+    location: 'South India',
     image: photos.project3,
     gallery: [
       '/images/project3/11.png',
@@ -95,11 +97,34 @@ export const projects: Project[] = [
   },
 
   {
-    slug: 'the-sunday-kitchen',
-    title: 'The Sunday Kitchen',
+    slug: 'project-4',
+    title: 'Residence',
+    category: 'Villas',
+    type: 'Villa',
+    location: 'South India',
+    image: photos.project4,
+    gallery: [
+      '/images/project4/1.jpg',
+      '/images/project4/2.jpg',
+      '/images/project4/3.jpg',
+      '/images/project4/4.jpg',
+      '/images/project4/5.jpg',
+      '/images/project4/7.jpg',
+      '/images/project4/12.jpg',
+      '/images/project4/15.jpg',
+      '/images/project4/13.jpg',
+      '/images/project4/16.jpg',
+    ],
+    intro: 'An inviting contemporary home pairing earthy textures with clean architectural lines.',
+    style: 'Contemporary natural',
+  },
+
+  {
+    slug: 'modular-kitchen-design',
+    title: 'FERRWUD | Kitchen Stories',
     category: 'Modular Kitchens',
     type: 'Kitchen',
-    location: 'Bengaluru · Demo project',
+    location: 'Bengaluru',
     image: photos.kitchen,
     gallery: [
       '/images/kitchen/k1.jpg',
@@ -115,11 +140,11 @@ export const projects: Project[] = [
   },
 
   {
-    slug: 'soft-hours',
-    title: 'Soft Hours',
+    slug: 'Bedroom-Stories',
+    title: 'FERRWUD | Bedroom Stories',
     category: 'Bedrooms',
     type: 'Bedroom',
-    location: 'South India · Demo project',
+    location: 'Bengaluru',
     image: photos.bedroom,
     gallery: [
       '/images/bedrooms/b1.png',
@@ -134,11 +159,11 @@ export const projects: Project[] = [
   },
 
   {
-    slug: 'form-and-function',
-    title: 'Form & Function',
+    slug: 'FERRWUD-The-Commercial-Chapter',
+    title: 'FERRWUD | The Commercial Chapter',
     category: 'Commercial Interiors',
     type: 'Office',
-    location: 'Bengaluru · Demo project',
+    location: 'Bengaluru',
     image: photos.office,
     gallery: [
       '/images/office/it1.jpg',
@@ -153,11 +178,11 @@ export const projects: Project[] = [
   },
 
   {
-    slug: 'gathered-light',
-    title: 'Gathered Light',
+    slug: 'The-Living-Edit',
+    title: 'FERRWUD | The Living Edit',
     category: 'Living Rooms',
     type: 'Living room',
-    location: 'Bengaluru · Demo project',
+    location: 'Bengaluru',
     image: photos.about,
     gallery: [
       '/images/project1/hall.png',
@@ -183,9 +208,119 @@ export const services = [
  { slug:'cafe-restaurant-interiors', title:'Café & Restaurant Interiors', image:photos.it, desc:'Atmosphere-led hospitality concepts that consider guest experience and operational flow.', deliverables:['Guest journey planning','Seating concepts','Lighting and material palette'] },
  { slug:'space-planning-visualisation', title:'Space Planning & 3D Visualisation', image:photos.villa, desc:'Explore layouts, proportions and material combinations before decisions are finalised.', deliverables:['Furniture layouts','Mood boards','Visualisation brief'] }
 ];
+
 export const articles = [
- {slug:'warm-minimalism-at-home', title:'Warm Minimalism: A Softer Way to Live', category:'Interior Design Ideas', date:'Design journal · Demo article', image:photos.living, excerpt:'Explore how natural textures, quiet colours and considered objects can make minimal spaces feel welcoming.'},
- {slug:'a-more-thoughtful-kitchen', title:'Planning a Kitchen Around Real Life', category:'Modular Kitchen Inspiration', date:'Design journal · Demo article', image:photos.kitchen, excerpt:'A practical starting point for thinking about zones, storage, lighting and the rhythm of everyday cooking.'},
- {slug:'layering-a-restful-bedroom', title:'Layering a Restful Bedroom', category:'Bedroom Design', date:'Design journal · Demo article', image:photos.bedroom, excerpt:'Bring together light, tactile materials and useful routines to shape a room that feels calm.'},
- {slug:'materials-that-age-beautifully', title:'Choosing Materials That Age Beautifully', category:'Material and Finish Guides', date:'Design journal · Demo article', image:photos.detail, excerpt:'A simple guide to thinking beyond first impressions when selecting finishes for a lived-in home.'}
+  {
+    slug: 'veneer-vs-laminate',
+    title: 'Veneer vs Laminate: Choosing the Right Finish for Your Interiors',
+    category: 'Materials & Finishes',
+    date: '2026-11-25',
+    image: '/images/articles/veneer-laminate.jpg',
+    excerpt: 'Explore the differences between natural veneer and laminate, including their aesthetics, durability, maintenance, cost, and applications in modern interiors.'
+  },
+  {
+    slug: 'small-space-interior-design',
+    title: 'Small Spaces, Big Possibilities: Designing Compact Homes',
+    category: 'Space Planning',
+    date: '2026-11-25',
+    image: '/images/articles/small-space.jpg',
+    excerpt: 'Discover how smart layouts, multifunctional furniture, lighting, and storage solutions can transform compact homes into spacious, comfortable, and stylish living environments.'
+  },
+  {
+    slug: 'kitchen-work-triangle',
+    title: 'The Kitchen Work Triangle: Designing for Everyday Efficiency',
+    category: 'Kitchen Design',
+    date: '2026-11-25',
+    image: '/images/articles/kitchen-triangle.jpg',
+    excerpt: 'Understand the relationship between the refrigerator, sink, and cooking zone, and how smart kitchen planning improves movement, functionality, and everyday workflow.'
+  },
+  {
+    slug: 'lighting-layers-interior-design',
+    title: 'The Art of Layered Lighting: Transforming Spaces Through Light',
+    category: 'Lighting Design',
+    date: '2026-11-25',
+    image: '/images/articles/layered-lighting.jpg',
+    excerpt: 'Learn how ambient, task, and accent lighting work together to create depth, improve functionality, and transform the mood and atmosphere of your interiors.'
+  },
+  {
+    slug: 'understanding-plywood-mdf-hdhmr',
+    title: 'Plywood, MDF & HDHMR: Understanding Interior Furniture Boards',
+    category: 'Material Knowledge',
+    date: '2026-11-25',
+    image: '/images/articles/plywood-mdf.jpg',
+    excerpt: 'Explore the differences between plywood, MDF, and HDHMR, including their properties, strength, moisture resistance, applications, and suitability for furniture.'
+  },
+  {
+    slug: 'wardrobe-design-storage-planning',
+    title: 'Wardrobe Design: Planning Storage for the Way You Live',
+    category: 'Furniture Design',
+    date: '2026-11-25',
+    image: '/images/articles/wardrobe-design.jpg',
+    excerpt: 'Explore smart wardrobe planning with hanging zones, drawers, accessories, shelves, and storage solutions designed around your lifestyle and everyday needs.'
+  },
+  {
+    slug: 'interior-colour-psychology',
+    title: 'Colour Psychology in Interiors: Creating the Right Mood',
+    category: 'Design Principles',
+    date: '2026-11-25',
+    image: '/images/articles/color-psychology.jpg',
+    excerpt: 'Discover how colours, undertones, contrast, and saturation influence the mood and perception of a space and help create harmonious interior palettes.'
+  },
+  {
+    slug: 'biophilic-interior-design',
+    title: 'Biophilic Design: Bringing Nature Into Modern Interiors',
+    category: 'Design Trends',
+    date: '2026-11-25',
+    image: '/images/articles/biophilic-design.jpg',
+    excerpt: 'Explore how natural light, indoor plants, organic materials, textures, and nature-inspired elements create more connected, calming, and comfortable indoor environments.'
+  },
+  {
+    slug: 'interior-design-project-process',
+    title: 'From Concept to Completion: The Journey of an Interior Project',
+    category: 'Design & Execution',
+    date: '2026-11-25',
+    image: '/images/articles/project-process.jpg',
+    excerpt: 'Take a look at the interior design journey from initial consultation and space planning to visualisation, technical drawings, manufacturing, execution, and final handover.'
+  },
+  {
+    slug: 'factory-made-vs-site-carpentry',
+    title: 'Factory-Made Furniture vs On-Site Carpentry: What Is the Difference?',
+    category: 'Manufacturing',
+    date: '2026-11-25',
+    image: '/images/articles/factory-vs-carpentry.jpg',
+    excerpt: 'Compare factory-manufactured furniture and on-site carpentry to understand differences in precision, quality control, flexibility, installation, and execution.'
+  },
+  {
+    slug: 'interior-design-budget-planning',
+    title: 'Planning Your Interior Budget: Where to Invest and Where to Save',
+    category: 'Budget & Planning',
+    date: '2026-11-25',
+    image: '/images/articles/interior-budget.jpg',
+    excerpt: 'Learn how to plan your interior budget, prioritise materials and furniture, balance quality with cost, and make smarter decisions for long-term value.'
+  },
+  {
+    slug: 'interior-hardware-guide',
+    title: 'The Hidden Details: Understanding Interior Furniture Hardware',
+    category: 'Hardware & Detailing',
+    date: '2026-11-25',
+    image: '/images/articles/furniture-hardware.jpg',
+    excerpt: 'Discover how hinges, drawer runners, lift systems, pull-outs, and furniture accessories influence functionality, durability, convenience, and everyday comfort.'
+  },
+  {
+    slug: 'interior-maintenance-guide',
+    title: 'Maintaining Your Interiors: A Guide to Materials and Finishes',
+    category: 'Maintenance & Care',
+    date: '2026-11-25',
+    image: '/images/articles/interior-maintenance.jpg',
+    excerpt: 'Learn how to care for wood, veneer, laminate, stone, glass, metal, upholstery, and furniture surfaces to preserve their appearance and extend their lifespan.'
+  },
+  {
+    slug: 'false-ceiling-design-guide',
+    title: 'False Ceilings Explained: Design, Lighting and Functionality',
+    category: 'Ceiling Design',
+    date: '2026-11-25',
+    image: '/images/articles/false-ceiling.jpg',
+    excerpt: 'Explore false ceiling designs, materials, lighting integration, proportions, and practical planning considerations for functional and aesthetically balanced interiors.'
+  }
 ];
+
